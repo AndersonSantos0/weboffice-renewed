@@ -3,14 +3,18 @@ import Image from 'next/image'
 import MenuSearch from '../menuSearch'
 import { useState } from 'react'
 
-const MenuConfigs = () => {
+interface MenuConfigsProps {
+    darkIcon?: boolean
+}
+
+const MenuConfigs: React.FC<MenuConfigsProps> = ({darkIcon = false}) => {
 
     const [activeSearchView, setActiveSearchView] = useState(false)
 
     return (
         <MenuConfigsContainer>
             <MenuSearchContainer>
-                <MenuSearch active={activeSearchView} setActive={(e)=>setActiveSearchView(e)} />
+                <MenuSearch darkIcon={darkIcon} active={activeSearchView} setActive={(e)=>setActiveSearchView(e)} />
             </MenuSearchContainer>
             <div>
 

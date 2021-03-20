@@ -1,10 +1,30 @@
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import MenuConfigs from '../menuConfigs'
 import { MenuContainer, MenuList, MenuListContainer, MenuListItem, MenuSubContainer } from './style'
 
 const Menu = () => {
+
+    const [darkMenu, setDarkMenu] = useState(false)
+
+    useEffect(() => {
+        function onScroll() {
+            if(window.pageYOffset > 200){
+                setDarkMenu(true)
+            }else{
+                setDarkMenu(false)
+            }
+        }
+
+        window.addEventListener("scroll", onScroll);
+
+        return () => {
+            window.removeEventListener("scroll", onScroll);
+        }
+    })
+
     return (
-        <MenuContainer>
+        <MenuContainer darkMenu={darkMenu}>
             <MenuSubContainer>
                 <MenuListContainer>
                     <MenuList>
@@ -30,7 +50,7 @@ const Menu = () => {
                         </MenuListItem>
                     </MenuList>
                 </MenuListContainer>
-                <MenuConfigs />
+                <MenuConfigs darkIcon={darkMenu} />
             </MenuSubContainer>
         </MenuContainer>
     )

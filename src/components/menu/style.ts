@@ -1,6 +1,10 @@
 import styled from "styled-components"
 
-export const MenuContainer = styled.nav`
+interface MenuContainerProps {
+    darkMenu?: boolean
+}
+
+export const MenuContainer = styled.nav<MenuContainerProps>`
     display: flex;
     width: 100%;
     height: 60px;
@@ -9,7 +13,21 @@ export const MenuContainer = styled.nav`
     z-index: 100;
     top: 0;
     left: 0;
+    transition: .4s;
+    background-color: ;
     color: var(--default-white);
+
+    ::after{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: ${props => props.darkMenu ? '100%' : 0};
+        transition: .4s;
+        background-color: var(--bg-gray);
+    }
 `
 
 export const MenuSubContainer = styled.div`

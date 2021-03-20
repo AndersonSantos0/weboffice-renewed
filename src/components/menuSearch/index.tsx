@@ -5,9 +5,10 @@ import { MenuSearchLimit, MenuSearchView, SearchButton, SearchView } from "./sty
 interface MenuSearchProps {
     active?: boolean;
     setActive?: (active) => void;
+    darkIcon?: boolean;
 }
 
-const MenuSearch: React.FC<MenuSearchProps> = ({active = false, setActive = () => {}}) => {
+const MenuSearch: React.FC<MenuSearchProps> = ({active = false, setActive = () => {}, darkIcon = false}) => {
 
     const [searchValue, setSearchValue] = useState("")
 
@@ -21,7 +22,7 @@ const MenuSearch: React.FC<MenuSearchProps> = ({active = false, setActive = () =
                 <SearchView>
                     <input id={"search-input"} placeholder={"Pesquisar"} onBlur={()=>searchValue.length == 0 && setActive(false)} value={searchValue} onChange={(e)=>setSearchValue(e.target.value)} />
                     <SearchButton>
-                        <FiSearch size={18} color={"var(--secondary-color)"} />
+                        <FiSearch size={18} color={ darkIcon ? "var(--bg-gray)" : "var(--secondary-color)"} />
                     </SearchButton>
                 </SearchView>
             </MenuSearchView>

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const MenuSearchLimit = styled.div`
     position: relative;
@@ -37,6 +37,7 @@ export const SearchView = styled.div`
         color: var(--bg-gray);
         padding-left: 8px;
     }
+    
 `
 
 export const SearchButton = styled.div`
@@ -46,4 +47,17 @@ export const SearchButton = styled.div`
     width: 32px;
     height: 32px;
     cursor: pointer;
+    transition: .4s;
+
+    > svg{
+        transition: .4s;
+    }
+
+    :hover{
+        transform: scale(1.2);
+    }
+
+    :active{
+        transform: scale(.8);
+    }
 `
