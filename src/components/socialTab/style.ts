@@ -7,7 +7,7 @@ export const SocialTabContainer = styled.div`
 
 export const SocialButton = styled.div`
     margin: 2px 8px;
-    transition: .4s;
+    transition: .4s transform;
     cursor: pointer;
 
     :hover{

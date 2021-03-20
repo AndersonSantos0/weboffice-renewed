@@ -14,8 +14,6 @@ export const MenuContainer = styled.nav<MenuContainerProps>`
     top: 0;
     left: 0;
     transition: .4s;
-    background-color: ;
-    color: var(--default-white);
 
     ::after{
         content: '';
@@ -79,5 +77,7 @@ export const MenuListItem = styled.li<MenuListItemProps>`
         padding: 0 16px;
         height: 100%;
         font-size: 16px;
+        color: var(--default-white);
+        transition: none;
     }
 `
