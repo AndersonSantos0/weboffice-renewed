@@ -1,14 +1,20 @@
 import Head from 'next/head'
 import Menu from '../components/menu'
+import SocialTab from '../components/socialTab'
+import LogoText from '../components/vectors/logo-text'
+import { Portfolio } from '../styles/IndexStyle'
 
 const Home = () => {
   return (
     <div>
       <Head>
-        <title>Home Office</title>
+        <title>WebOffice</title>
       </Head>
       <Menu />
-      <div style={{height: '60vh', width: '100vw', background: '-webkit-linear-gradient(45deg, var(--primary-color), var(--secondary-color)'}} />
+      <Portfolio>
+        <LogoText />
+        <SocialTab style={{position: 'absolute', right: 16, bottom: 16}} />
+      </Portfolio>
     </div>
   )
 }

@@ -19,8 +19,8 @@ const MenuConfigs = () => {
                 <MenuProfileView>
                     <Image
                         src={'/images/profile.jpg'}
-                        width={32}
-                        height={32}
+                        width={64}
+                        height={64}
                         objectFit={'cover'}
                     />
                 </MenuProfileView>

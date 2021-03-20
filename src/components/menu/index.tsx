@@ -20,12 +20,12 @@ const Menu = () => {
                         </MenuListItem>
                         <MenuListItem>
                             <Link href="/">
-                                <a>Empresas</a>
+                                <a>Freelancers</a>
                             </Link>
                         </MenuListItem>
                         <MenuListItem>
                             <Link href="/">
-                                <a>Freelancers</a>
+                                <a>Empresas</a>
                             </Link>
                         </MenuListItem>
                     </MenuList>

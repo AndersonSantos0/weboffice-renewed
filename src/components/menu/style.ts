@@ -6,9 +6,9 @@ export const MenuContainer = styled.nav`
     height: 60px;
     font-family: Comfortaa;
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
-    //background-color: var(--bg-gray);
     color: var(--default-white);
 `
 
@@ -50,7 +50,7 @@ export const MenuListItem = styled.li<MenuListItemProps>`
         height: 1px;
         background-color: var(--default-white);
         bottom: 26%;
-        left: 8px;
+        left: 16px;
         transition: .3s;
     }
 
@@ -58,7 +58,7 @@ export const MenuListItem = styled.li<MenuListItemProps>`
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 8px;
+        padding: 0 16px;
         height: 100%;
         font-size: 16px;
     }

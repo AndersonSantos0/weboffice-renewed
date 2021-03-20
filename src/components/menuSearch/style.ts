@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const MenuSearchLimit = styled.div`
     position: relative;
+    min-width: 32px;
 `
 
 interface MenuSearchViewProps {
@@ -16,6 +17,7 @@ export const MenuSearchView = styled.div<MenuSearchViewProps>`
     position: relative;
     z-index: 2;
     transition: .4s;
+    float: right;
 `
 
 export const SearchView = styled.div`
@@ -23,7 +25,6 @@ export const SearchView = styled.div`
     right: 0;
     display: flex; 
     background-color: var(--default-white);
-    
     overflow: hidden;
     width: 200px;
 

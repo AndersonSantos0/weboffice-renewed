@@ -22,5 +22,10 @@ export const MenuProfileView = styled.div`
     width: 32px;
     height: 32px;
     border-radius: 18px;
-    overflow: hidden
+    overflow: hidden;
+
+    > img{
+        width: 100%;
+        height: 100%;
+    }
 `
