@@ -1,0 +1,30 @@
+@font-face{
+  font-family: Comfortaa;
+  src: url('../fonts/Comfortaa.ttf');
+}
+
+:root{
+  --primary-color: #38EF7D;
+  --secondary-color: #11998E;
+  --primary-gradient: -webkit-lienar-gradient(45deg, var(--primary-color), var(--secondary-color));
+  --bg-gray: #333;
+  --bg-lightgray: #444;
+  --default-white: #fff;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
