@@ -3,9 +3,9 @@ import Menu from '../components/menu'
 import SocialTab from '../components/socialTab'
 import LogoText from '../components/vectors/logo-text'
 import PrimaryWave from '../components/vectors/primary-wave'
-import { Portfolio, Section } from '../styles/IndexStyle'
+import { Portfolio, Section } from '../styles/pages/home'
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <div>
       <Head>
