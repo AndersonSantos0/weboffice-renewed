@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 interface MenuContainerProps {
     darkMenu?: boolean
@@ -13,17 +13,17 @@ export const MenuContainer = styled.nav<MenuContainerProps>`
     z-index: 100;
     top: 0;
     left: 0;
-    transition: .4s;
+    transition: 0.4s;
 
-    ::after{
+    ::after {
         content: '';
         position: absolute;
         z-index: -1;
         top: 0;
         left: 0;
         width: 100%;
-        height: ${props => props.darkMenu ? '100%' : 0};
-        transition: .4s;
+        height: ${props => (props.darkMenu ? '100%' : 0)};
+        transition: 0.4s;
         background-color: var(--bg-gray);
     }
 `
@@ -34,9 +34,7 @@ export const MenuSubContainer = styled.div`
     justify-content: space-between;
 `
 
-export const MenuListContainer = styled.div`
-
-`
+export const MenuListContainer = styled.div``
 
 export const MenuList = styled.ul`
     list-style: none;
@@ -55,22 +53,22 @@ export const MenuListItem = styled.li<MenuListItemProps>`
     display: flex;
     flex-direction: column;
 
-    :hover::before{
+    :hover::before {
         width: 36px;
     }
 
-    ::before{
+    ::before {
         content: '';
         position: absolute;
-        width: ${props => props.active ? '36px' : 0};
+        width: ${props => (props.active ? '36px' : 0)};
         height: 1px;
         background-color: var(--default-white);
         bottom: 26%;
         left: 16px;
-        transition: .3s;
+        transition: 0.3s;
     }
 
-    > a{
+    > a {
         display: flex;
         align-items: center;
         justify-content: center;

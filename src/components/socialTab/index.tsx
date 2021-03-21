@@ -1,4 +1,11 @@
-import { FaDribbble, FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa"
+/* eslint-disable @typescript-eslint/ban-types */
+import React from 'react'
+import {
+    FaDribbble,
+    FaFacebookSquare,
+    FaInstagram,
+    FaLinkedin
+} from 'react-icons/fa'
 import { SocialButton, SocialTabContainer } from './style'
 
 interface SocialProps {
@@ -7,18 +14,18 @@ interface SocialProps {
 
 const SocialTab: React.FC<SocialProps> = ({ style = {} }) => {
     return (
-        <SocialTabContainer style={style} >
+        <SocialTabContainer style={style}>
             <SocialButton>
-                <FaDribbble color={"#fff"} />
+                <FaDribbble color={'#fff'} />
             </SocialButton>
             <SocialButton>
-                <FaInstagram color={"#fff"} />
+                <FaInstagram color={'#fff'} />
             </SocialButton>
             <SocialButton>
-                <FaFacebookSquare color={"#fff"} />
+                <FaFacebookSquare color={'#fff'} />
             </SocialButton>
             <SocialButton>
-                <FaLinkedin color={"#fff"} />
+                <FaLinkedin color={'#fff'} />
             </SocialButton>
         </SocialTabContainer>
     )

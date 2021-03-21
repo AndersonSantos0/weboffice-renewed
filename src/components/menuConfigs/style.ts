@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const MenuSearchContainer = styled.div`
     display: flex;
@@ -24,7 +24,7 @@ export const MenuProfileView = styled.div`
     border-radius: 18px;
     overflow: hidden;
 
-    > img{
+    > img {
         width: 100%;
         height: 100%;
     }

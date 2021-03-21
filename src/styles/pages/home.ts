@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const Portfolio = styled.div`
     position: relative;
@@ -18,5 +18,6 @@ export const Section = styled.div<SectionProps>`
     position: relative;
     width: 100%;
     height: 30vh;
-    background-color: ${props => props.color ? props.color : 'var(--bg-gray)'} 
+    background-color: ${props =>
+        props.color ? props.color : 'var(--bg-gray)'};
 `

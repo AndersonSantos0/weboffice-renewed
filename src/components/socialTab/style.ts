@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const SocialTabContainer = styled.div`
     display: flex;
@@ -7,10 +7,10 @@ export const SocialTabContainer = styled.div`
 
 export const SocialButton = styled.div`
     margin: 2px 8px;
-    transition: .4s transform;
+    transition: 0.4s transform;
     cursor: pointer;
 
-    :hover{
+    :hover {
         transform: scale(1.2);
     }
 `

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const MenuSearchLimit = styled.div`
     position: relative;
@@ -6,29 +6,29 @@ export const MenuSearchLimit = styled.div`
 `
 
 interface MenuSearchViewProps {
-    active?: boolean;
+    active?: boolean
 }
 
 export const MenuSearchView = styled.div<MenuSearchViewProps>`
     height: 32px;
-    width: ${props => props.active ? '200px' : 0};
+    width: ${props => (props.active ? '200px' : 0)};
     border-radius: 4px;
     overflow: hidden;
     position: relative;
     z-index: 2;
-    transition: .4s;
+    transition: 0.4s;
     float: right;
 `
 
 export const SearchView = styled.div`
     position: absolute;
     right: 0;
-    display: flex; 
+    display: flex;
     background-color: var(--default-white);
     overflow: hidden;
     width: 200px;
 
-    > input{
+    > input {
         flex: 1;
         outline: none;
         border: none;
@@ -37,7 +37,6 @@ export const SearchView = styled.div`
         color: var(--bg-gray);
         padding-left: 8px;
     }
-    
 `
 
 export const SearchButton = styled.div`
@@ -47,17 +46,17 @@ export const SearchButton = styled.div`
     width: 32px;
     height: 32px;
     cursor: pointer;
-    transition: .4s;
+    transition: 0.4s;
 
-    > svg{
-        transition: .4s;
+    > svg {
+        transition: 0.4s;
     }
 
-    :hover{
+    :hover {
         transform: scale(1.2);
     }
 
-    :active{
-        transform: scale(.8);
+    :active {
+        transform: scale(0.8);
     }
 `

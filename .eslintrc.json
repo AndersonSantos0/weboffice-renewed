@@ -9,9 +9,8 @@
         "plugin:react/recommended",
         "standard",
         "plugin:@typescript-eslint/recommended",
-        "prettier/@typescript-eslint",
-        "prettier/standar",
-        "prettier/react"
+        "eslint-config-prettier",
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -27,6 +26,7 @@
         "prettier"
     ],
     "rules": {
+        "no-use-before-define": "off",
         "prettier/prettier": "error",
         "space-before-function-paren": "off",
         "react/prop-types": "off"

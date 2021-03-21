@@ -1,25 +1,31 @@
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+
 import MenuConfigs from '../menuConfigs'
-import { MenuContainer, MenuList, MenuListContainer, MenuListItem, MenuSubContainer } from './style'
+import {
+    MenuContainer,
+    MenuList,
+    MenuListContainer,
+    MenuListItem,
+    MenuSubContainer
+} from './style'
 
-const Menu = () => {
-
+const Menu: React.FC = () => {
     const [darkMenu, setDarkMenu] = useState(false)
 
     useEffect(() => {
         function onScroll() {
-            if(window.pageYOffset > 200){
+            if (window.pageYOffset > 200) {
                 setDarkMenu(true)
-            }else{
+            } else {
                 setDarkMenu(false)
             }
         }
 
-        window.addEventListener("scroll", onScroll);
+        window.addEventListener('scroll', onScroll)
 
         return () => {
-            window.removeEventListener("scroll", onScroll);
+            window.removeEventListener('scroll', onScroll)
         }
     })
 

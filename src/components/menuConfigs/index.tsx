@@ -1,24 +1,30 @@
-import { MenuConfigsContainer, MenuProfileContainer, MenuProfileView, MenuSearchContainer } from './style'
+import React, { useState } from 'react'
+import {
+    MenuConfigsContainer,
+    MenuProfileContainer,
+    MenuProfileView,
+    MenuSearchContainer
+} from './style'
 import Image from 'next/image'
 import MenuSearch from '../menuSearch'
-import { useState } from 'react'
 
 interface MenuConfigsProps {
     darkIcon?: boolean
 }
 
-const MenuConfigs: React.FC<MenuConfigsProps> = ({darkIcon = false}) => {
-
+const MenuConfigs: React.FC<MenuConfigsProps> = ({ darkIcon = false }) => {
     const [activeSearchView, setActiveSearchView] = useState(false)
 
     return (
         <MenuConfigsContainer>
             <MenuSearchContainer>
-                <MenuSearch darkIcon={darkIcon} active={activeSearchView} setActive={(e)=>setActiveSearchView(e)} />
+                <MenuSearch
+                    darkIcon={darkIcon}
+                    active={activeSearchView}
+                    setActive={e => setActiveSearchView(e)}
+                />
             </MenuSearchContainer>
-            <div>
-
-            </div>
+            <div></div>
             <MenuProfileContainer>
                 <MenuProfileView>
                     <Image
