@@ -3,6 +3,21 @@
   src: url('../fonts/Comfortaa.ttf');
 }
 
+@font-face{
+    font-family: PoppinsL;
+    src: url('../fonts/Poppins-light.ttf');
+}
+
+@font-face{
+    font-family: PoppinsR;
+    src: url('../fonts/Poppins-regular.ttf');
+}
+
+@font-face{
+    font-family: PoppinsB;
+    src: url('../fonts/Poppins-bold.ttf');
+}
+
 :root{
   --primary-color: #38EF7D;
   --secondary-color: #11998E;
