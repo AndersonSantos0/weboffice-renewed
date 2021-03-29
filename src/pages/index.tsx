@@ -7,6 +7,7 @@ import PrimaryWave from '../components/vectors/primary-wave'
 import { Portfolio, Section, StepsContainer } from '../styles/pages/home'
 import StepItem from '../components/stepItem'
 
+
 const Home: React.FC = () => {
     return (
         <div>
