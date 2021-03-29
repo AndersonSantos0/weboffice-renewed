@@ -34,7 +34,7 @@ export const SearchView = styled.div`
         border: none;
         height: 32px;
         font-family: Comfortaa;
-        color: var(--bg-gray);
+        color: var(--default-gray);
         padding-left: 8px;
     }
 `

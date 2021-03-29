@@ -21,15 +21,20 @@
 :root{
   --primary-color: #38EF7D;
   --secondary-color: #11998E;
+  --primary-enterprise-color: #00C6FF;
+  --secondary-enterprise-color: #0072FF;
   --primary-gradient: -webkit-linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-  --bg-gray: #333;
-  --bg-lightgray: #444;
+  --primary-enterprise-gradient: -webkit-linear-gradient(45deg, var(--primary-enterprise-color), var(--secondary-enterprise-color));
+  --default-darkgray: #222;
+  --default-gray: #333;
+  --default-lightgray: #444;
+  --default-subwhite: #999;
   --default-white: #fff;
 }
 
 html,
 body {
-  background-color: var(--bg-gray);
+  background-color: var(--default-gray);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -48,6 +53,11 @@ body::-webkit-scrollbar-track {
 /* Handle */
 body::-webkit-scrollbar-thumb {
   background: #666;
+}
+
+.screen{
+    display: flex;
+    min-height: 100vh;
 }
 
 a {

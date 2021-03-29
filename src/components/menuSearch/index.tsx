@@ -42,7 +42,7 @@ const MenuSearch: React.FC<MenuSearchProps> = ({
                             size={18}
                             color={
                                 darkIcon
-                                    ? 'var(--bg-gray)'
+                                    ? 'var(--default-gray)'
                                     : 'var(--secondary-color)'
                             }
                         />

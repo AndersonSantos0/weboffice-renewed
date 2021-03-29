@@ -22,7 +22,7 @@ export const Section = styled.div<SectionProps>`
     width: 100%;
     height: 30vh;
     background-color: ${props =>
-        props.color ? props.color : 'var(--bg-gray)'};
+        props.color ? props.color : 'var(--default-gray)'};
 `
 
 export const StepsContainer = styled.div`

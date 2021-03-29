@@ -18,7 +18,7 @@ export const StepItemNumber = styled.h2`
     position: absolute;
     font-family: PoppinsB;
     font-weight: bold;
-    color: var(--bg-lightgray);
+    color: var(--default-lightgray);
     user-select: none;
     font-size: 98px;
     z-index: 0;

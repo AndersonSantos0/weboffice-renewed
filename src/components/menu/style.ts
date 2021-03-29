@@ -24,7 +24,7 @@ export const MenuContainer = styled.nav<MenuContainerProps>`
         width: 100%;
         height: ${props => (props.darkMenu ? '100%' : 0)};
         transition: 0.4s;
-        background-color: var(--bg-gray);
+        background-color: var(--default-gray);
     }
 `
 
